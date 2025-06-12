@@ -1,0 +1,18 @@
+{
+  "name": "portalis-ai-avatar-test-environment",
+  "version": "1.0.0",
+  "description": "This Javascript application will be used as a testing ground for PortalisAI avatars. This allows us to test avatars within the context of being one of our client's users.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.1"
+  }
+}
