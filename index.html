@@ -3,10 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
     <title>Portalis AI Avatar Test Environment</title>
   </head>
   <body>
     <!-- Content goes here -->
     <h1>Welcome to Portalis AI Avatar Test Environment</h1>
+
+    <form class="avatarURLBuilder">
+      <label for="baseURL">Base URL</label>
+      <input type="text" id="baseURL" name="baseURL" />
+      <div class="urlParams">
+        <label class="section-title">URL Params</label>
+      </div>
+
+      <div class="buttons-section">
+        <button
+          class="addParameter"
+          type="button"
+          onclick="addParameter(event)"
+        >
+          Add Parameter
+        </button>
+        <button onclick="loadAvatar(event)">Submit</button>
+      </div>
+    </form>
+
+    <div class="iframe-container">
+      <iframe
+        class="portalis-iframe"
+        src="https://chat.portalis.ai/?slotId=ff55d5e3-5ff5-4c99-be54-38642e9c8327"
+        allow="camera;microphone;fullscreen;clipboard-write"
+      ></iframe>
+    </div>
   </body>
 </html>
