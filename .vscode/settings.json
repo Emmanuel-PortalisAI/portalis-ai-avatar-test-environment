@@ -1,0 +1,11 @@
+{
+    "liveServer.settings.host": "localhost",
+    "liveServer.settings.port": 3000,
+    "liveServer.settings.https": {
+        "cert": "C:/Users/mobuc/OneDrive/Documents/PortalisAI/portalis-ai-avatar-test-environment/certificate/localhost.pem",
+        "key": "C:/Users/mobuc/OneDrive/Documents/PortalisAI/portalis-ai-avatar-test-environment/certificate/localhost.key",
+        "passphrase": "password",
+        "enable": true
+    }
+}
+

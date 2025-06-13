@@ -1,6 +1,6 @@
 function loadAvatar(event) {
   event.preventDefault();
-  baseURL = document.querySelector("#baseURL").value + "?";
+  baseURL = document.querySelector("#baseURL").value;
 
   params = document.querySelectorAll(".urlParam");
 
@@ -8,9 +8,11 @@ function loadAvatar(event) {
     const key = element.querySelector(".keyInput").value;
     const value = element.querySelector(".valueInput").value;
     // Do something with key and value, e.g., log or build an object
-    baseURL += `${key}=${value}&`;
+    baseURL += `&${key}=${value}`;
   });
-  baseURL = baseURL.slice(0, -1);
+  if (!paramCount.size < 1) {
+    baseURL = baseURL.slice(0, -1);
+  }
 
   document.querySelector(".portalis-iframe").src = baseURL;
   console.log(baseURL);
@@ -49,6 +51,7 @@ function addParameter(event) {
   deleteBtn.type = "button";
   deleteBtn.innerText = "-";
   deleteBtn.onclick = function (e) {
+    paramCount -= 1;
     urlParamsDiv.removeChild(paramDiv);
   };
 
