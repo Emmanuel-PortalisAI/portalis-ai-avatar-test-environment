@@ -60,9 +60,6 @@ function saveLoadedAvatarURLtoLocalStorage() {
   localStorage.setItem("savedAvatarURL", JSON.stringify(avatarData));
 
   console.log("Avatar URL saved to localStorage:", completeURL);
-
-  // Optional: Show user feedback
-  alert("Avatar URL saved successfully!");
 }
 
 function loadSavedAvatarURL() {
