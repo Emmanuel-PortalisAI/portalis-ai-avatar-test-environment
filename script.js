@@ -10,7 +10,7 @@ function loadAvatar(event) {
     // Do something with key and value, e.g., log or build an object
     baseURL += `&${key}=${value}`;
   });
-  if (paramCount < 1) {
+  if (paramCount < 1 && baseURL[baseURL.length - 1] === "&") {
     baseURL = baseURL.slice(0, -1);
   }
 
